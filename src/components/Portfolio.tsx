@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import headshot from '@/assets/rj.jpg';
 
-const Portfolio = () => {
+const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
