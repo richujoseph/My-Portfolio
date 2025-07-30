@@ -39,43 +39,43 @@ const Portfolio = () => {
       title: 'CineAura',
       description: 'Flask-based movie recommendation bot using machine learning algorithms',
       tech: ['Python', 'Flask', 'ML', 'API'],
-      link: '#'
+      link: 'https://github.com/richujoseph/CineAura'
     },
     {
       title: 'IoT Vulnerability Scanner',
       description: 'Automated tool to identify security vulnerabilities in IoT devices',
       tech: ['Python', 'Network Security', 'IoT'],
-      link: '#'
+      link: 'https://github.com/richujoseph/SIMPLE_IOT_VULNERABILITY_SCANNER'
     },
     {
       title: 'Educational Ransomware Simulation',
       description: 'Safe educational tool to demonstrate ransomware behavior and prevention',
       tech: ['Python', 'Cybersecurity', 'Education'],
-      link: '#'
+      link: 'https://github.com/richujoseph/Educational_Ransomware_Simulation'
     },
     {
       title: 'Cookie Security Manager',
       description: 'Browser extension for managing and securing HTTP cookies',
       tech: ['JavaScript', 'Web Security', 'Browser Extension'],
-      link: '#'
+      link: 'https://github.com/richujoseph/Cookie_Security_Manager'
     },
     {
       title: 'DDoS & FTP Scanners',
       description: 'Network security tools for detecting DDoS attacks and FTP vulnerabilities',
       tech: ['Python', 'Network Security', 'Scanning'],
-      link: '#'
+      link: 'https://github.com/richujoseph/DDOS_stimulation'
     },
     {
       title: 'Port Scanning Tool',
       description: 'Bash-based network port scanner for security assessment',
       tech: ['Bash', 'Network Security', 'Scanning'],
-      link: '#'
+      link: 'https://github.com/richujoseph/Bash-Script-Port-Scanning-Tool'
     },
     {
       title: 'Library Management System',
       description: 'Full-stack web application for managing library resources',
       tech: ['Java', 'Database', 'Web Development'],
-      link: '#'
+      link: 'https://github.com/richujoseph/Library_management_Systems'
     }
   ];
 
@@ -104,14 +104,18 @@ const Portfolio = () => {
                 </button>
               ))}
             </div>
-            <div className="flex space-x-4">
-              <Button variant="ghost" size="sm">
-                <Github className="h-5 w-5" />
+           <div className="flex space-x-4">
+              <Button asChild variant="ghost" size="sm">
+                <a href="https://github.com/richujoseph" target="_blank" rel="noopener noreferrer">
+                    <Github className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="sm">
-                <Linkedin className="h-5 w-5" />
-              </Button>
-            </div>
+            <Button asChild variant="ghost" size="sm">
+                  <a href="https://www.linkedin.com/in/richujoseph" target="_blank" rel="noopener noreferrer">
+                     <Linkedin className="h-5 w-5" />
+                  </a>
+             </Button>
+          </div>
           </div>
         </div>
       </nav>
@@ -181,7 +185,7 @@ const Portfolio = () => {
             <div className="space-y-6 animate-slide-up">
               <div className="flex items-center space-x-2 text-primary">
                 <MapPin className="h-5 w-5" />
-                <span>SJCE Palai, Kerala, India</span>
+                <span>SJCET Palai, Kerala, India</span>
               </div>
               <div className="flex items-center space-x-2 text-primary">
                 <Calendar className="h-5 w-5" />
@@ -384,7 +388,7 @@ const Portfolio = () => {
       <footer className="py-8 px-6 border-t border-border">
         <div className="container mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2024 Richu Joseph. Built with React & TailwindCSS
+            © 2025 Richu Joseph. Built with React & TailwindCSS
           </p>
         </div>
       </footer>
