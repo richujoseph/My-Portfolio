@@ -19,7 +19,7 @@ import {
   Award,
   Send
 } from 'lucide-react';
-import headshot from '@/assets/richu-headshot.jpg';
+import headshot from '@/assets/rj.jpg';
 
 const Portfolio = () => {
   const [isVisible, setIsVisible] = useState(false);
