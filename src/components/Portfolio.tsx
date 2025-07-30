@@ -60,7 +60,7 @@ const Portfolio = () => {
       link: 'https://github.com/richujoseph/Cookie_Security_Manager'
     },
     {
-      title: 'DDoS & FTP Scanners',
+      title: 'DDoS',
       description: 'Network security tools for detecting DDoS attacks and FTP vulnerabilities',
       tech: ['Python', 'Network Security', 'Scanning'],
       link: 'https://github.com/richujoseph/DDOS_stimulation'
