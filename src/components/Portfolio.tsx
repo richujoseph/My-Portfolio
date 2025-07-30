@@ -245,8 +245,8 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 px-6 bg-secondary/20">
+      {/* Projects Section */}
+      <section id="Projects" className="py-20 px-6 bg-secondary/20">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-orbitron font-bold text-center mb-12 text-glow">
             Featured Projects
