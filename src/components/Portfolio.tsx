@@ -152,7 +152,7 @@ const Portfolio = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               className="btn-cyber text-lg px-8 py-3"
-              onClick={() => scrollToSection('portfolio')}
+              onClick={() => scrollToSection('Projects')}
             >
               View My Work
             </Button>
@@ -193,7 +193,7 @@ const Portfolio = () => {
               </div>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a Computer Science student at SJCE Palai, specializing in Cybersecurity. 
+                I'm a Computer Science student at SJCET Palai, specializing in Cybersecurity. 
                 I'm deeply passionate about protecting digital systems and exploring the 
                 intersections of AI, IoT, and cyber defense.
               </p>
