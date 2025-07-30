@@ -92,7 +92,7 @@ const Portfolio = () => {
           <div className="flex justify-between items-center">
             <h1 className="text-xl font-orbitron font-bold text-glow">RJ</h1>
             <div className="hidden md:flex space-x-8">
-              {['home', 'about', 'portfolio', 'contact'].map((section) => (
+              {['home', 'about', 'Projects', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -215,7 +215,7 @@ const Portfolio = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Terminal className="h-6 w-6 text-primary" />
-                  <span className="font-medium">Penetration Testing</span>
+                  <span className="font-medium">AI</span>
                 </div>
               </div>
             </div>
@@ -267,16 +267,19 @@ const Portfolio = () => {
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                  <Button variant="outline" size="sm" className="w-full">
-                    <Github className="h-4 w-4 mr-2" />
-                    View Code
+                  <Badge key={tech} variant="outline" className="text-xs">
+                      {tech}
+                  </Badge>
+                  ))}
+                </div>
+
+              <Button asChild variant="outline" size="sm" className="w-full">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <Github className="h-4 w-4 mr-2" />
+                View Code
+                  </a>
                   </Button>
-                </CardContent>
+                  </CardContent>
               </Card>
             ))}
           </div>
