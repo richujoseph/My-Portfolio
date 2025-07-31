@@ -373,8 +373,14 @@ const Portfolio = () => {
   action="https://formspree.io/f/mnnzzgza"
   method="POST"
   target="hidden_iframe"
-  onSubmit={() => {
+  onSubmit={(e) => {
     document.getElementById("form-msg").style.display = "block";
+    setTimeout(() => {
+      document.getElementById("form-msg").style.display = "none";
+    }, 8000);
+    setTimeout(() => {
+      e.target.reset();
+    }, 300);
   }}
 >
   <Card className="w-full max-w-md mx-auto card-hover">
