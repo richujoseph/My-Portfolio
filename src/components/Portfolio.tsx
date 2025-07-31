@@ -369,30 +369,39 @@ const Portfolio = () => {
               </div>
             </div>
             
-            <form
-              action="https://formspree.io/f/mnnzzgza"
-              method="POST"
-              className="w-full max-w-md mx-auto px-4 sm:px-6"
-               >
-              <Card className="card-hover">
+              <form
+                  action="https://formspree.io/f/yourFormID" // ← replace with your Formspree form URL
+                    method="POST"
+                    onSubmit={() => setSubmitted(true)}
+                    className="w-full max-w-md mx-auto px-4 sm:px-6"
+                    >
+                    <Card className="card-hover">
                   <CardHeader>
-                  <CardTitle className="text-center text-lg sm:text-xl">Send a Message</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
+                  <CardTitle className="text-center text-lg sm:text-xl">
+                        Send a Message
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
                 <Input name="name" placeholder="Your Name" required />
-                  <Input name="email" type="email" placeholder="Your Email" required />
-                <Textarea name="message" placeholder="Your Message" rows={4} required />
-      
+              <Input name="email" type="email" placeholder="Your Email" required />
+            <Textarea name="message" placeholder="Your Message" rows={4} required />
 
-                      <Button type="submit" className="btn-cyber w-full">
+                  <Button type="submit" className="btn-cyber w-full">
                       <Send className="h-4 w-4 mr-2" />
-                        Send Message
-                    </Button>
-                  </CardContent>
-                </Card>
-          </form>
+                          Send Message
+                </Button>
 
-          </div>
+                  {submitted && (
+                       <p className="text-green-600 text-center mt-2">
+                    ✅ Message sent! Thank you.
+                  </p>
+                )}
+                  </CardContent>
+                  </Card>
+                </form>
+
+
+            </div>
         </div>
       </section>
 
@@ -400,7 +409,7 @@ const Portfolio = () => {
       <footer className="py-8 px-6 border-t border-border">
         <div className="container mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2025 Richu Joseph. Built with React & TailwindCSS
+            © 2025 Richu Joseph.
           </p>
         </div>
       </footer>
