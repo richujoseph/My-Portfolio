@@ -252,7 +252,7 @@ const Portfolio = () => {
             Featured Projects
           </h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+         <div className="flex space-x-6 overflow-x-auto pb-4 scroll-smooth">
             {projects.map((project, index) => (
               <Card key={index} className="card-hover group">
                 <CardHeader>
