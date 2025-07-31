@@ -369,44 +369,25 @@ const Portfolio = () => {
               </div>
             </div>
             
-export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
-
-  return (
-    <form
-      action="https://formspree.io/f/mnnzzgza"
-      method="POST"
-      onSubmit={() => setSubmitted(true)}
-      className="w-full max-w-md mx-auto px-4 sm:px-6"
-    >
-      <Card className="card-hover">
-        <CardHeader>
-          <CardTitle className="text-center text-lg sm:text-xl">
-            Send a Message
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <Input name="name" placeholder="Your Name" required />
-          <Input name="email" type="email" placeholder="Your Email" required />
-          <Textarea name="message" placeholder="Your Message" rows={4} required />
-
-          <Button type="submit" className="btn-cyber w-full">
-            <Send className="h-4 w-4 mr-2" />
-            Send Message
-          </Button>
-
-          {submitted && (
-            <p className="text-green-600 text-center mt-2">
-              ✅ Message sent! Thank you.
-            </p>
-          )}
-        </CardContent>
-      </Card>
-    </form>
-  );
-}
-
-
+<form
+  action="https://formspree.io/f/mnnzzgza" 
+  method="POST"
+>
+  <Card className="w-full max-w-md mx-auto card-hover">
+    <CardHeader>
+      <CardTitle className="text-center text-lg sm:text-xl">Send a Message</CardTitle>
+    </CardHeader>
+    <CardContent className="space-y-4">
+      <Input type="text" name="name" placeholder="Your Name" required />
+      <Input type="email" name="email" placeholder="Your Email" required />
+      <Textarea name="message" placeholder="Your Message" rows={4} required />
+      <Button type="submit" className="btn-cyber w-full">
+        <Send className="h-4 w-4 mr-2" />
+        Send Message
+      </Button>
+    </CardContent>
+  </Card>
+</form>
 
           </div>
         </div>
