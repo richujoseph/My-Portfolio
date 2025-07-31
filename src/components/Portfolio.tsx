@@ -369,20 +369,31 @@ const Portfolio = () => {
               </div>
             </div>
             
-            <Card className="card-hover">
-              <CardHeader>
-                <CardTitle>Send a Message</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <Input placeholder="Your Name" />
-                <Input placeholder="Your Email" type="email" />
-                <Textarea placeholder="Your Message" rows={4} />
-                <Button className="btn-cyber w-full">
-                  <Send className="h-4 w-4 mr-2" />
-                  Send Message
-                </Button>
-              </CardContent>
-            </Card>
+            <form
+              action="https://formspree.io/f/yourFormID" // ← Replace with your actual Formspree ID
+              method="POST"
+              className="w-full max-w-md mx-auto px-4 sm:px-6"
+               >
+              <Card className="card-hover">
+                  <CardHeader>
+                  <CardTitle className="text-center text-lg sm:text-xl">Send a Message</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                <Input name="name" placeholder="Your Name" required />
+                  <Input name="email" type="email" placeholder="Your Email" required />
+                <Textarea name="message" placeholder="Your Message" rows={4} required />
+      
+                  {/* Optional Redirect to a thank you page */}
+                {/* <input type="hidden" name="_redirect" value="https://yourdomain.com/thanks" /> */}
+
+                      <Button type="submit" className="btn-cyber w-full">
+                      <Send className="h-4 w-4 mr-2" />
+                        Send Message
+                    </Button>
+                  </CardContent>
+                </Card>
+          </form>
+
           </div>
         </div>
       </section>
