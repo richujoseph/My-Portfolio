@@ -370,7 +370,7 @@ const Portfolio = () => {
             </div>
             
               <form
-                  action="https://formspree.io/f/yourFormID" // ← replace with your Formspree form URL
+                  action="https://formspree.io/f/mnnzzgza"
                     method="POST"
                     onSubmit={() => setSubmitted(true)}
                     className="w-full max-w-md mx-auto px-4 sm:px-6"
@@ -401,7 +401,7 @@ const Portfolio = () => {
                 </form>
 
 
-            </div>
+          </div>
         </div>
       </section>
 
