@@ -383,8 +383,6 @@ const Portfolio = () => {
                   <Input name="email" type="email" placeholder="Your Email" required />
                 <Textarea name="message" placeholder="Your Message" rows={4} required />
       
-                  {/* Optional Redirect to a thank you page */}
-                {/* <input type="hidden" name="_redirect" value="https://yourdomain.com/thanks" /> */}
 
                       <Button type="submit" className="btn-cyber w-full">
                       <Send className="h-4 w-4 mr-2" />
