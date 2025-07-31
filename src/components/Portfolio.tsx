@@ -370,7 +370,7 @@ const Portfolio = () => {
             </div>
             
             <form
-              action="https://formspree.io/f/yourFormID" // ← Replace with your actual Formspree ID
+              action="https://formspree.io/f/mnnzzgza"
               method="POST"
               className="w-full max-w-md mx-auto px-4 sm:px-6"
                >
