@@ -370,10 +370,12 @@ const Portfolio = () => {
             </div>
             
 <form
-  action="https://formspree.io/f/mnnzzgza" 
+  action="https://formspree.io/f/mnnzzgza"
   method="POST"
   target="hidden_iframe"
- onsubmit="document.getElementById('form-msg').style.display='block'"
+  onSubmit={() => {
+    document.getElementById("form-msg").style.display = "block";
+  }}
 >
   <Card className="w-full max-w-md mx-auto card-hover">
     <CardHeader>
@@ -389,12 +391,14 @@ const Portfolio = () => {
       </Button>
     </CardContent>
   </Card>
-  <p id="form-msg" style="display:none; color:green; text-align:center;">
-  ✅ Message sent!
-</p>
-    <iframe name="hidden_iframe" style={{ display: "none" }}></iframe>
+
+  <p id="form-msg" style={{ display: "none", color: "green", textAlign: "center" }}>
+    ✅ Message sent!
+  </p>
+
+  <iframe name="hidden_iframe" style={{ display: "none" }}></iframe>
 </form>
-</form>
+
 
           </div>
         </div>
