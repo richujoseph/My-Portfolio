@@ -79,10 +79,20 @@ const Portfolio = () => {
     }
   ];
 
-  const scrollToSection = (sectionId: string) => {
-    setActiveSection(sectionId);
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-  };
+const scrollToSection = (sectionId: string): void => {
+  setActiveSection(sectionId);
+  const element = document.getElementById(sectionId);
+  if (element) {
+    const offset = 80; // Adjust for fixed headers
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+};
 
   return (
     <div className="min-h-screen bg-background text-foreground">
