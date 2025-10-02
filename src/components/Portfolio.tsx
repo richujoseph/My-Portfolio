@@ -132,7 +132,7 @@ const Portfolio = () => {
                 alt="Richu Joseph"
                 className="w-full h-full object-cover rounded-full border-4 border-primary/30 shadow-cyber animate-float"
               />
-              <div className="absolute inset-0 rounded-full bg-gradient-cyber opacity-20 animate-pulse-slow"></div>
+              {/*<div className="absolute inset-0 rounded-full bg-gradient-cyber opacity-20 animate-pulse-slow"></div>*/}
             </div>
           </div>
           
